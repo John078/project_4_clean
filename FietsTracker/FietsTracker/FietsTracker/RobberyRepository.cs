@@ -7,7 +7,7 @@ using SQLite;
 
 namespace FietsTracker
 {
-    class RobberyRepository : IRepository<Robbery>
+    public class RobberyRepository : IRepository<Robbery>
     {
         private GenericDatabase<Robbery> _database;
 

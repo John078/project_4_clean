@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FietsTracker
 {
-    interface IDataModel
+    public interface IDataModel
     {
         int ID { get; set; }
     }

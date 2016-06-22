@@ -7,11 +7,11 @@ using SQLite;
 
 namespace FietsTracker
 {
-    class BicycleBinRepository : IRepository<BicycleBin>
+    public class BicycleBinRepository : IRepository<BicycleBin>
     {
         GenericDatabase<BicycleBin> _database;
 
-        BicycleBinRepository(SQLiteConnection connection)
+        public BicycleBinRepository(SQLiteConnection connection)
         {
             _database = new GenericDatabase<BicycleBin>(connection);
         }

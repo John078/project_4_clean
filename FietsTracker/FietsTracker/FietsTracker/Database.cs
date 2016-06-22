@@ -7,7 +7,7 @@ using SQLite;
 
 namespace FietsTracker
 {
-    interface IDatabase<T>
+    public interface IDatabase<T>
     {
         List<T> GetAll();
         T GetById(int id);
@@ -15,7 +15,7 @@ namespace FietsTracker
         void Save(T item);
     }
 
-    class GenericDatabase<T> : IDatabase<T> where T : IDataModel, new()
+    public class GenericDatabase<T> : IDatabase<T> where T : IDataModel, new()
     {
         private SQLiteConnection databaseConnection;
 

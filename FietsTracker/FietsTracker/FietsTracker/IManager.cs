@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace FietsTracker
 {
-    public interface IRepository<T>
+    public interface IManager<T>
     {
-        T GetItem(int i);
+        T GetById(int id);
         List<T> GetAll();
-        void SaveItem();
-        void DeleteItem();
     }
 }
