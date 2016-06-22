@@ -24,8 +24,8 @@ namespace FietsTracker.Droid
         // Acts as an instance
         public static FietsTrackerApplication Current { get; private set; }
 
-        public RobberyManager RobberyManager { get; set; }
-        public BicycleBinManager BicyclceBinManager { get; set; }
+        public GenericManager<Robbery> RobberyManager { get; set; }
+        public GenericManager<BicycleBin> BicyclceBinManager { get; set; }
 
         SQLiteConnection connection;
         
@@ -51,8 +51,8 @@ namespace FietsTracker.Droid
 
             connection = new SQLiteConnection(path);
              
-            RobberyManager = new RobberyManager(connection);
-            BicyclceBinManager = new BicycleBinManager(connection);
+            RobberyManager = new GenericManager<Robbery>(connection);
+            BicyclceBinManager = new GenericManager<BicycleBin>(connection);
         }
 
         private void ReadWriteStream(Stream readStream, Stream writeStream)

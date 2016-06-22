@@ -7,14 +7,6 @@ using SQLite;
 
 namespace FietsTracker.PCL
 {
-    public interface IDatabase<T>
-    {
-        List<T> GetAll();
-        T GetById(int id);
-        void DeleteById(int id);
-        void Save(T item);
-    }
-
     public class GenericDatabase<T> : IDatabase<T> where T : IDataModel, new()
     {
         private SQLiteConnection databaseConnection;
@@ -47,7 +39,7 @@ namespace FietsTracker.PCL
 
         public T GetById(int id)
         {
-            lock(locker)
+            lock (locker)
             {
                 return databaseConnection.Table<T>().FirstOrDefault(x => x.ID == id);
             }
