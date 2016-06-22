@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using FietsTracker.PCL;
+
 namespace FietsTracker.Droid
 {
 	[Activity (Label = "FietsTracker.Droid", MainLauncher = true, Icon = "@drawable/icon")]
@@ -24,10 +26,15 @@ namespace FietsTracker.Droid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+            Robbery robbery = FietsTrackerApplication.Current.RobberyManager.GetById(11);
+            BicycleBin bin = FietsTrackerApplication.Current.BicyclceBinManager.GetById(11);
+            button.Text = robbery.IncidentNumber;
+
+            button.Click += (s, e) =>
+            {
+                button.Text = bin.XCoordinate;
+            };
+            
 		}
 	}
 }

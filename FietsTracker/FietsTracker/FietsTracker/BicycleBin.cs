@@ -12,6 +12,7 @@ namespace FietsTracker.PCL
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string InventoryNumber { get; set; }
+        public string InvSrt { get; set; }
         public string Description { get; set; }
         public string Street { get; set; }
         public string AtNumber { get; set; }
