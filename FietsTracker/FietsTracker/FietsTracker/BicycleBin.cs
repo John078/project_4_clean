@@ -7,7 +7,7 @@ using SQLite;
 
 namespace FietsTracker
 {
-    class BicycleBin
+    class BicycleBin : IDataModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
