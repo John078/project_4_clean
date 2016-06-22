@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 
-namespace FietsTracker
+namespace FietsTracker.PCL
 {
     public class BicycleBinRepository : IRepository<BicycleBin>
     {

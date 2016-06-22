@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SQLite;
 
-namespace FietsTracker
+namespace FietsTracker.PCL
 {
     public class BicycleBinManager : IManager<BicycleBin>
     {

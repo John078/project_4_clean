@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 
-namespace FietsTracker.Managers
+namespace FietsTracker.PCL
 {
     public class RobberyManager : IManager<Robbery>
     {
