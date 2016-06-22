@@ -12,7 +12,6 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
 using SQLite;
 
 namespace FietsTracker.Droid
@@ -41,7 +40,7 @@ namespace FietsTracker.Droid
             string libraryPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string path = System.IO.Path.Combine(libraryPath, dbfilename);
             connection = new SQLiteConnection(path);
-
+             
             RobberyManager = new RobberyManager(connection);
             BicyclceBinManager = new BicycleBinManager(connection);
         }
