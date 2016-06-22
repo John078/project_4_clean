@@ -33,15 +33,14 @@
   <ItemGroup>
     <Compile Include="BicycleBin.cs" />
     <Compile Include="BicycleBinManager.cs" />
-    <Compile Include="BicycleBinRepository.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="GenericRepository.cs" />
     <Compile Include="IDataModel.cs" />
     <Compile Include="IManager.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Robbery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RobberyManager.cs" />
-    <Compile Include="RobberyRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">

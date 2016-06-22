@@ -9,11 +9,11 @@ namespace FietsTracker.PCL
 {
     public class RobberyManager : IManager<Robbery>
     {
-        private RobberyRepository _repository;
+        private IRepository<Robbery> _repository;
 
         public RobberyManager(SQLiteConnection connection)
         {
-            _repository = new RobberyRepository(connection);
+            _repository = new GenericRepository<Robbery>(connection);
         }
 
         public List<Robbery> GetAll()

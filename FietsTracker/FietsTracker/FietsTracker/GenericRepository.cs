@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SQLite;
 
 namespace FietsTracker.PCL
 {
-    public class RobberyRepository : IRepository<Robbery>
+    class GenericRepository<T> : IRepository<T> where T : IDataModel, new()
     {
-        private GenericDatabase<Robbery> _database;
+        IDatabase<T> _database;
 
-        public RobberyRepository(SQLiteConnection connection)
+        public GenericRepository(SQLite.SQLiteConnection connection)
         {
-            _database = new GenericDatabase<Robbery>(connection);
+            _database = new GenericDatabase<T>(connection);
         }
 
         public void DeleteItem()
@@ -21,12 +20,12 @@ namespace FietsTracker.PCL
             throw new NotImplementedException();
         }
 
-        public List<Robbery> GetAll()
+        public List<T> GetAll()
         {
             return _database.GetAll();
         }
 
-        public Robbery GetItem(int i)
+        public T GetItem(int i)
         {
             return _database.GetById(i);
         }
