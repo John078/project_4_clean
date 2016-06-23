@@ -23,6 +23,7 @@ namespace LineChart
             var plotModel = new PlotModel
             {
                 Title = "Line Diagram"
+                
             };
 
             var xaxis = new LinearAxis
