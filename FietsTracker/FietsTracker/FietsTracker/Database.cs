@@ -24,7 +24,6 @@ namespace FietsTracker.PCL
         public GenericDatabase(SQLiteConnection c)
         {
             databaseConnection = c;
-            databaseConnection.CreateTable<T>();
         }
 
         public void Save(T item)
