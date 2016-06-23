@@ -22,8 +22,12 @@ namespace LineChart
         {
             var plotModel = new PlotModel
             {
-                Title = "Line Diagram"
-                
+                Title = "Line Diagram",
+                LegendFontSize = 20,
+                DefaultFontSize = 20,
+                SubtitleFontSize = 20,
+                TitleFontSize = 20
+
             };
 
             var xaxis = new LinearAxis
