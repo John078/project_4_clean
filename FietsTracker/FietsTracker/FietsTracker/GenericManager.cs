@@ -7,21 +7,21 @@ using SQLite;
 
 namespace FietsTracker.PCL
 {
-    public class RobberyManager : IManager<Robbery>
+    public class GenericManager<T> : IManager<T> where T : IDataModel, new()
     {
-        private RobberyRepository _repository;
+        private GenericRepository<T> _repository;
 
-        public RobberyManager(SQLiteConnection connection)
+        public GenericManager(SQLiteConnection connection)
         {
-            _repository = new RobberyRepository(connection);
+            _repository = new GenericRepository<T>(connection);
         }
 
-        public List<Robbery> GetAll()
+        public List<T> GetAll()
         {
             return _repository.GetAll();
         }
 
-        public Robbery GetById(int id)
+        public T GetById(int id)
         {
             return _repository.GetItem(id);
         }
