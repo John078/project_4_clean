@@ -20,6 +20,7 @@ namespace App1
             var plotView = new PlotView(this)
             {
                 Model = myClass.MyModel,
+                
 
             };
 
