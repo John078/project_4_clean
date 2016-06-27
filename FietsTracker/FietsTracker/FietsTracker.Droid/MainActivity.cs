@@ -66,9 +66,9 @@ namespace FietsTracker.Droid
             public SamplePagerAdapter(Android.Support.V4.App.FragmentManager fragManager) : base(fragManager)
             {
                 mFragmentHolder = new List<Android.Support.V4.App.Fragment>();
-                mFragmentHolder.Add(new Fragment1());
+                mFragmentHolder.Add(new FPieChart());
                 mFragmentHolder.Add(new Fragment2());
-                mFragmentHolder.Add(new Fragment3());
+                mFragmentHolder.Add(new FLineChart());
                 mFragmentHolder.Add(new Fragment4());
                 //mFragmentHolder.Add(new Fragment5());
             }
@@ -84,41 +84,41 @@ namespace FietsTracker.Droid
             }
         }
 
-        public class Fragment1 : Android.Support.V4.App.Fragment
-        {
-            Button Button1;
-            private TextView mTextView;
+        //public class Fragment1 : Android.Support.V4.App.Fragment
+        //{
+        //    Button Button1;
+        //    private TextView mTextView;
 
-            public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-            {
+        //    public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        //    {
 
-                var view = inflater.Inflate(Resource.Layout.PieChart, container, false);
-                Button Button1 = view.FindViewById<Button>(Resource.Id.ButtonPieChart);
-                Button1.Click += Button1_Click;
+        //        var view = inflater.Inflate(Resource.Layout.PieChart, container, false);
+        //        Button Button1 = view.FindViewById<Button>(Resource.Id.ButtonPieChart);
+        //        Button1.Click += Button1_Click;
 
-                mTextView = view.FindViewById<TextView>(Resource.Id.textView1);
-                mTextView.Text = "Here u can select the Street Name. When u entered the Street Name the PieChart appears";
-                return view;
+        //        mTextView = view.FindViewById<TextView>(Resource.Id.textView1);
+        //        mTextView.Text = "Here u can select the Street Name. When u entered the Street Name the PieChart appears";
+        //        return view;
                 
-            }
+        //    }
 
-            public override void OnCreate(Bundle savedInstanceState)
-            {
-                base.OnCreate(savedInstanceState);
+        //    public override void OnCreate(Bundle savedInstanceState)
+        //    {
+        //        base.OnCreate(savedInstanceState);
 
-            }
+        //    }
 
-            private void Button1_Click(object sender, EventArgs e)
-            {
-                Intent intent = new Intent(this.Context, typeof(PieChart));
-                this.StartActivity(intent);
-            }
+        //    private void Button1_Click(object sender, EventArgs e)
+        //    {
+        //        Intent intent = new Intent(this.Context, typeof(PieChart));
+        //        this.StartActivity(intent);
+        //    }
 
-            public override string ToString() //Called on line 156 in ScrollView
-            {
-                return "PieChart";
-            }
-        }
+        //    public override string ToString() //Called on line 156 in ScrollView
+        //    {
+        //        return "PieChart";
+        //    }
+        //}
 
         public class Fragment2 : Android.Support.V4.App.Fragment
         {
@@ -138,23 +138,23 @@ namespace FietsTracker.Droid
             }
         }
 
-        public class Fragment3 : Android.Support.V4.App.Fragment
-        {
-            private TextView mTextView;
-            public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-            {
-                var view = inflater.Inflate(Resource.Layout.LineChart, container, false);
+        //public class Fragment3 : Android.Support.V4.App.Fragment
+        //{
+        //    private TextView mTextView;
+        //    public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        //    {
+        //        var view = inflater.Inflate(Resource.Layout.LineChart, container, false);
 
-                mTextView = view.FindViewById<TextView>(Resource.Id.textView3);
-                mTextView.Text = "Here we show the LineChart";
-                return view;
-            }
+        //        mTextView = view.FindViewById<TextView>(Resource.Id.textView3);
+        //        mTextView.Text = "Here we show the LineChart";
+        //        return view;
+        //    }
 
-            public override string ToString() //Called on line 156 in ScrollView
-            {
-                return "LineChart";
-            }
-        }
+        //    public override string ToString() //Called on line 156 in ScrollView
+        //    {
+        //        return "LineChart";
+        //    }
+        //}
         public class Fragment4 : Android.Support.V4.App.Fragment
         {
             private TextView mTextView;

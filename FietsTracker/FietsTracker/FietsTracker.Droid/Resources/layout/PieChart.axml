@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/textView1" />
-  <Button
-    android:text="Make now!"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/ButtonPieChart"
-    android:layout_gravity="center"
-    android:layout_marginTop="300px" />
+    <Button
+        android:text="Make now!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonPieChart"
+        android:layout_gravity="center"
+        android:layout_marginTop="300px" />
 </LinearLayout>

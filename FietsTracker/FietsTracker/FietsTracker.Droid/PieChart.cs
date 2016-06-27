@@ -23,7 +23,7 @@ namespace FietsTracker.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ChartHallo);
+            SetContentView(Resource.Layout.PieChartLayout);
 
             PlotView view = FindViewById<PlotView>(Resource.Id.plot_view);
             view.Model = CreatePlotModel();

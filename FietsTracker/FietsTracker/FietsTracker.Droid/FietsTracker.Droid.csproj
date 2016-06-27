@@ -95,7 +95,10 @@
   <ItemGroup>
     <Compile Include="AgendaActivity.cs" />
     <Compile Include="Application.cs" />
+    <Compile Include="FLineChart.cs" />
+    <Compile Include="FPieChart.cs" />
     <Compile Include="HomeScreen.cs" />
+    <Compile Include="LineChart.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MapsActivity.cs" />
     <Compile Include="PieChart.cs" />
@@ -135,7 +138,10 @@
     <AndroidResource Include="Resources\menu\actionbar_main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChartHallo.axml">
+    <AndroidResource Include="Resources\layout\PieChartLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LineChartLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
