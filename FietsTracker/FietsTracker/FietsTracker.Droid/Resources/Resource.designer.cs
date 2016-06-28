@@ -407,20 +407,23 @@ namespace FietsTracker.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0012
-			public const int ButtonAgenda = 2131427346;
+			// aapt resource value: 0x7f0b0014
+			public const int ButtonAgenda = 2131427348;
 			
-			// aapt resource value: 0x7f0b0013
-			public const int ButtonCharts = 2131427347;
+			// aapt resource value: 0x7f0b000f
+			public const int ButtonBarChart = 2131427343;
+			
+			// aapt resource value: 0x7f0b0015
+			public const int ButtonCharts = 2131427349;
+			
+			// aapt resource value: 0x7f0b0018
+			public const int ButtonLineChart = 2131427352;
 			
 			// aapt resource value: 0x7f0b0016
-			public const int ButtonLineChart = 2131427350;
+			public const int ButtonLocation = 2131427350;
 			
-			// aapt resource value: 0x7f0b0014
-			public const int ButtonLocation = 2131427348;
-			
-			// aapt resource value: 0x7f0b001b
-			public const int ButtonPieChart = 2131427355;
+			// aapt resource value: 0x7f0b001c
+			public const int ButtonPieChart = 2131427356;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int adjust_height = 2131427333;
@@ -434,8 +437,8 @@ namespace FietsTracker.Droid
 			// aapt resource value: 0x7f0b000b
 			public const int dark = 2131427339;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int homelayout = 2131427344;
+			// aapt resource value: 0x7f0b0012
+			public const int homelayout = 2131427346;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int hybrid = 2131427328;
@@ -446,11 +449,11 @@ namespace FietsTracker.Droid
 			// aapt resource value: 0x7f0b000c
 			public const int light = 2131427340;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int menu = 2131427364;
+			// aapt resource value: 0x7f0b0025
+			public const int menu = 2131427365;
 			
-			// aapt resource value: 0x7f0b0011
-			public const int myButton = 2131427345;
+			// aapt resource value: 0x7f0b0013
+			public const int myButton = 2131427347;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int none = 2131427329;
@@ -458,41 +461,41 @@ namespace FietsTracker.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int normal = 2131427330;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int place_autocomplete_clear_button = 2131427358;
-			
-			// aapt resource value: 0x7f0b0020
-			public const int place_autocomplete_powered_by_google = 2131427360;
-			
-			// aapt resource value: 0x7f0b0022
-			public const int place_autocomplete_prediction_primary_text = 2131427362;
-			
-			// aapt resource value: 0x7f0b0023
-			public const int place_autocomplete_prediction_secondary_text = 2131427363;
+			// aapt resource value: 0x7f0b001f
+			public const int place_autocomplete_clear_button = 2131427359;
 			
 			// aapt resource value: 0x7f0b0021
-			public const int place_autocomplete_progress = 2131427361;
+			public const int place_autocomplete_powered_by_google = 2131427361;
 			
-			// aapt resource value: 0x7f0b001c
-			public const int place_autocomplete_search_button = 2131427356;
+			// aapt resource value: 0x7f0b0023
+			public const int place_autocomplete_prediction_primary_text = 2131427363;
+			
+			// aapt resource value: 0x7f0b0024
+			public const int place_autocomplete_prediction_secondary_text = 2131427364;
+			
+			// aapt resource value: 0x7f0b0022
+			public const int place_autocomplete_progress = 2131427362;
 			
 			// aapt resource value: 0x7f0b001d
-			public const int place_autocomplete_search_input = 2131427357;
+			public const int place_autocomplete_search_button = 2131427357;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int place_autocomplete_separator = 2131427359;
+			// aapt resource value: 0x7f0b001e
+			public const int place_autocomplete_search_input = 2131427358;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int plot_view = 2131427351;
+			// aapt resource value: 0x7f0b0020
+			public const int place_autocomplete_separator = 2131427360;
 			
-			// aapt resource value: 0x7f0b0018
-			public const int sample_main_layout = 2131427352;
+			// aapt resource value: 0x7f0b0010
+			public const int plot_view = 2131427344;
+			
+			// aapt resource value: 0x7f0b0019
+			public const int sample_main_layout = 2131427353;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int satellite = 2131427331;
 			
-			// aapt resource value: 0x7f0b0019
-			public const int sliding_tabs = 2131427353;
+			// aapt resource value: 0x7f0b001a
+			public const int sliding_tabs = 2131427354;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int standard = 2131427336;
@@ -506,14 +509,14 @@ namespace FietsTracker.Droid
 			// aapt resource value: 0x7f0b000e
 			public const int textView2 = 2131427342;
 			
-			// aapt resource value: 0x7f0b0015
-			public const int textView3 = 2131427349;
+			// aapt resource value: 0x7f0b0017
+			public const int textView3 = 2131427351;
 			
-			// aapt resource value: 0x7f0b000f
-			public const int textView4 = 2131427343;
+			// aapt resource value: 0x7f0b0011
+			public const int textView4 = 2131427345;
 			
-			// aapt resource value: 0x7f0b001a
-			public const int viewPager = 2131427354;
+			// aapt resource value: 0x7f0b001b
+			public const int viewPager = 2131427355;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int wide = 2131427337;
@@ -554,40 +557,43 @@ namespace FietsTracker.Droid
 			public const int BarChart = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int GroupChart = 2130903042;
+			public const int BarChartLayout = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Home = 2130903043;
+			public const int GroupChart = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int LineChart = 2130903044;
+			public const int Home = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int LineChartLayout = 2130903045;
+			public const int LineChart = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int Main = 2130903046;
+			public const int LineChartLayout = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MapsActivity = 2130903047;
+			public const int Main = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int PieChart = 2130903048;
+			public const int MapsActivity = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int PieChartLayout = 2130903049;
+			public const int PieChart = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int place_autocomplete_fragment = 2130903050;
+			public const int PieChartLayout = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int place_autocomplete_item_powered_by_google = 2130903051;
+			public const int place_autocomplete_fragment = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int place_autocomplete_item_prediction = 2130903052;
+			public const int place_autocomplete_item_powered_by_google = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int place_autocomplete_progress = 2130903053;
+			public const int place_autocomplete_item_prediction = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int place_autocomplete_progress = 2130903054;
 			
 			static Layout()
 			{

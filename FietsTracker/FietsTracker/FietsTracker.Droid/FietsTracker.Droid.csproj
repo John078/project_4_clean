@@ -95,6 +95,8 @@
   <ItemGroup>
     <Compile Include="AgendaActivity.cs" />
     <Compile Include="Application.cs" />
+    <Compile Include="BarChart.cs" />
+    <Compile Include="FBarChart.cs" />
     <Compile Include="FLineChart.cs" />
     <Compile Include="FPieChart.cs" />
     <Compile Include="HomeScreen.cs" />
@@ -142,6 +144,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\LineChartLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\BarChartLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

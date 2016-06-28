@@ -67,7 +67,7 @@ namespace FietsTracker.Droid
             {
                 mFragmentHolder = new List<Android.Support.V4.App.Fragment>();
                 mFragmentHolder.Add(new FPieChart());
-                mFragmentHolder.Add(new Fragment2());
+                mFragmentHolder.Add(new FBarChart());
                 mFragmentHolder.Add(new FLineChart());
                 mFragmentHolder.Add(new Fragment4());
                 //mFragmentHolder.Add(new Fragment5());
@@ -120,23 +120,23 @@ namespace FietsTracker.Droid
         //    }
         //}
 
-        public class Fragment2 : Android.Support.V4.App.Fragment
-        {
-            private TextView mTextView;
-            public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-            {
-                var view = inflater.Inflate(Resource.Layout.BarChart, container, false);
+        //public class Fragment2 : Android.Support.V4.App.Fragment
+        //{
+        //    private TextView mTextView;
+        //    public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        //    {
+        //        var view = inflater.Inflate(Resource.Layout.BarChart, container, false);
 
-                mTextView = view.FindViewById<TextView>(Resource.Id.textView2);
-                mTextView.Text = "Here we show the BarChart";
-                return view;
-            }
+        //        mTextView = view.FindViewById<TextView>(Resource.Id.textView2);
+        //        mTextView.Text = "Here we show the BarChart";
+        //        return view;
+        //    }
 
-            public override string ToString() //Called on line 156 in ScrollView
-            {
-                return "BarChart";
-            }
-        }
+        //    public override string ToString() //Called on line 156 in ScrollView
+        //    {
+        //        return "BarChart";
+        //    }
+        //}
 
         //public class Fragment3 : Android.Support.V4.App.Fragment
         //{
