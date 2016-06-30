@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">FietsTracker.Droid</string>
+  <string name="google_maps_key">AIzaSyAc728QYELzvZ9kO-LEleXtlMLEXL35slM</string>
+
+  <string-array name="dropdown_arrays">
+    <item>Choose a item</item>
+    <item>Elvin</item>
+    <item>John</item>
+    <item>Ronald</item>
+    <item>Sil</item>
+  </string-array>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/homelayout"
+    android:background="#FFFFFF">
+    <TextView
+        android:text="Fiets App"
+        android:textSize="120px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="50px"
+        android:textColor="#4DB0DA"
+        android:gravity="center" />
+    <Button
+        android:text="Agenda"
+        android:background="@drawable/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonAgenda"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_below="@+id/imageView1" />
+    <Button
+        android:text="Charts"
+        android:background="@drawable/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonCharts"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_below="@+id/ButtonAgenda"
+        android:layout_marginTop="20px" />
+    <Button
+        android:text="Maps"
+        android:background="@drawable/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonLocation"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_below="@+id/ButtonCharts"
+        android:layout_marginTop="20px" />
+    <Button
+        android:text="Location"
+        android:background="@drawable/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonMyLocation"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_below="@+id/ButtonLocation"
+        android:layout_marginTop="20px" />
+    <ImageView
+        android:src="@drawable/Skyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_marginTop="150px"
+        android:layout_below="@+id/textview1" />
+    <TextView
+        android:text="© De Kracht van de Groep"
+        android:textSize="50px"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:background="#4DB0DA"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" />
+</RelativeLayout>

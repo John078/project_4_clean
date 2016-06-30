@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment" />
+    <Button
+        android:text="Normaal"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:id="@+id/buttonNormal"
+        android:background="@drawable/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@+id/buttonSateliet"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="Sateliet"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:id="@+id/buttonSateliet"
+        android:background="@drawable/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/RoundButton"
+        android:text="+"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="80px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>
